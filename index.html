@@ -1,37 +1,19 @@
 <!DOCTYPE html>
-<!--
-  =====================================================
-  index.html — Pruthvi Raj D S Portfolio Website
-  =====================================================
-  This is the MAIN FILE of the portfolio.
-  It holds all the content — the text, images,
-  buttons, and structure of every section.
-
-  Think of it like the skeleton of the website:
-    - index.html  → the BONES (structure & content)
-    - style.css   → the SKIN  (how it looks)
-    - script.js   → the BRAIN (how it moves & reacts)
-    - photo.jpg   → the FACE  (profile photo)
-
-  All 4 files must be in the same folder for the
-  website to work properly!
-
-  Written by Pruthvi Raj D S
-  =====================================================
--->
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Pruthvi Raj D S — Portfolio</title>
+<title>Pruthvi Raj D S &mdash; Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Crimson+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"/></style>
+<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 <div id="cur-dot"></div>
 <div id="cur-ring"></div>
 <canvas id="particles"></canvas>
+
+<!-- NAV -->
 <nav id="navbar">
   <div class="nav-brand">
     <img class="nav-avatar" src="photo.jpg" alt="Pruthvi"/>
@@ -48,16 +30,20 @@
   </ul>
   <button class="hamburger" id="ham"><span></span><span></span><span></span></button>
 </nav>
+
+<!-- MOBILE MENU -->
 <div class="mob-menu" id="mobMenu">
   <button class="mob-close" id="mobClose">&#x2715;</button>
-  <a href="#about" class="mob-link">About</a>
-  <a href="#skills" class="mob-link">Skills</a>
+  <a href="#about"      class="mob-link">About</a>
+  <a href="#skills"     class="mob-link">Skills</a>
   <a href="#experience" class="mob-link">Experience</a>
-  <a href="#projects" class="mob-link">Projects</a>
-  <a href="#github" class="mob-link">GitHub</a>
-  <a href="#resume" class="mob-link">Resume</a>
-  <a href="#contact" class="mob-link">Contact</a>
+  <a href="#projects"   class="mob-link">Projects</a>
+  <a href="#github"     class="mob-link">GitHub</a>
+  <a href="#resume"     class="mob-link">Resume</a>
+  <a href="#contact"    class="mob-link">Contact</a>
 </div>
+
+<!-- HERO -->
 <section id="about">
   <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
   <div class="avatar-wrap">
@@ -81,8 +67,7 @@
       <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn
     </a>
     <a href="javascript:void(0)" onclick="window.location=atob('bWFpbHRvOnBydXRodmlyYWo0NjIwMDRAZ21haWwuY29t')" class="btn-g">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-      Email Me
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email Me
     </a>
     <a href="#resume" class="btn-p" style="background:linear-gradient(135deg,#0891b2,#10b981)">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>View Resume
@@ -90,22 +75,16 @@
   </div>
   <div class="scroll-hint"><span>SCROLL</span><div class="scroll-arrow"></div></div>
 </section>
-<!-- ═══════════════════════════════════════
-     TECH STACK SECTION
-     Shows 8 skill cards (IoT, Cloud, DevOps etc).
-     Cards are built by JavaScript in script.js.
-══════════════════════════════════════════ -->
+
+<!-- SKILLS -->
 <section id="skills">
   <div class="container">
     <div class="reveal"><p class="sec-label">Expertise</p><h2 class="sec-title">Tech Stack</h2></div>
     <div class="skills-grid" id="skillsGrid"></div>
   </div>
 </section>
-<!-- ═══════════════════════════════════════
-     EXPERIENCE & EDUCATION SECTION
-     Timeline showing internship at Rooman
-     Technologies and college education.
-══════════════════════════════════════════ -->
+
+<!-- EXPERIENCE -->
 <section id="experience">
   <div class="container">
     <div class="reveal"><p class="sec-label">Journey</p><h2 class="sec-title">Experience &amp; Education</h2></div>
@@ -123,31 +102,22 @@
         <div class="tl-body">
           <div class="tl-top"><div class="tl-title">B.E. &mdash; Computer Science &amp; Engineering</div><span class="tl-badge" style="color:var(--cyan);border-color:rgba(6,182,212,.35);background:rgba(6,182,212,.08)">2022 &mdash; 2026</span></div>
           <div class="tl-org" style="color:var(--cyan)">Proudha Devaraya Institute of Technology &nbsp;&middot;&nbsp; VTU</div>
-          <div class="tl-desc">Pursuing a full-stack engineering curriculum with strong focus on IoT systems, cloud computing, DevOps automation, and software engineering fundamentals.</div>
+          <div class="tl-desc">Pursuing full-stack engineering with strong focus on IoT, cloud computing, DevOps automation, and software engineering fundamentals.</div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- ═══════════════════════════════════════
-     FEATURED PROJECTS SECTION
-     Shows project cards built by JavaScript.
-     Cards glow with color when you hover.
-══════════════════════════════════════════ -->
+
+<!-- PROJECTS -->
 <section id="projects">
   <div class="container">
     <div class="reveal"><p class="sec-label">Portfolio</p><h2 class="sec-title">Featured Projects</h2></div>
     <div class="projects-grid" id="projectsGrid"></div>
   </div>
 </section>
-<!-- ═══════════════════════════════════════
-     GITHUB CONTRIBUTIONS SECTION
-     Shows LIVE data from GitHub:
-       - Contribution heatmap (green squares)
-       - GitHub stats card (stars, commits etc)
-       - Top programming languages card
-     These are images that load from the internet.
-══════════════════════════════════════════ -->
+
+<!-- GITHUB -->
 <section id="github">
   <div class="container">
     <div class="reveal"><p class="sec-label">Activity</p><h2 class="sec-title">GitHub Contributions</h2></div>
@@ -175,31 +145,24 @@
     </div>
   </div>
 </section>
-<!-- ═══════════════════════════════════════
-     RESUME / CV SECTION
-     Hidden by default — shows when you click
-     "View Resume". Contains the full CV with
-     education, work experience, skills, and projects.
-     The "Download as PDF" button opens a print dialog.
-══════════════════════════════════════════ -->
+
+<!-- RESUME -->
 <section id="resume" style="padding:4rem 2rem 6rem">
   <div class="container">
     <div class="reveal" style="text-align:center">
       <p class="sec-label">CV</p>
       <h2 class="sec-title">My Resume</h2>
-      <div style="max-width:680px;margin:0 auto 2.5rem;background:linear-gradient(135deg,rgba(79,70,229,.1),rgba(8,145,178,.08),rgba(16,185,129,.06));border:1px solid rgba(139,92,246,.2);border-radius:20px;padding:2rem 2.5rem;position:relative;overflow:hidden;backdrop-filter:blur(12px)">
-        <div style="position:absolute;top:-10px;left:20px;font-size:7rem;line-height:1;color:rgba(139,92,246,.1);font-family:'Crimson Pro',Georgia,serif;pointer-events:none">&ldquo;</div>
-        <div style="position:absolute;width:200px;height:200px;border-radius:50%;background:rgba(6,182,212,.06);filter:blur(50px);top:-60px;right:-40px;pointer-events:none"></div>
-        <p style="font-family:'Crimson Pro',Georgia,serif;font-size:clamp(1.1rem,2.5vw,1.4rem);font-style:italic;color:var(--text);line-height:1.8;position:relative;z-index:1;margin-bottom:1.2rem">
-          Behind every line of code is a story &mdash; of problems solved, systems built, and lessons learned the hard way. Want to know the full story?
-        </p>
-        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;position:relative;z-index:1">
-          <div style="display:flex;flex-wrap:wrap;gap:.5rem">
-            <span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.2rem .65rem;border-radius:999px;background:rgba(139,92,246,.12);border:1px solid rgba(139,92,246,.25);color:var(--purple)">&#9729;&#65039; Cloud Intern</span>
-            <span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.2rem .65rem;border-radius:999px;background:rgba(6,182,212,.1);border:1px solid rgba(6,182,212,.25);color:var(--cyan)">&#127891; CSE &rsquo;26</span>
-            <span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.2rem .65rem;border-radius:999px;background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.25);color:var(--green)">&#9889; Open to Work</span>
+      <div class="resume-quote-card">
+        <div class="rqc-bg-quote">&ldquo;</div>
+        <div class="rqc-glow"></div>
+        <p class="rqc-text">Behind every line of code is a story &mdash; of problems solved, systems built, and lessons learned the hard way. Want to know the full story?</p>
+        <div class="rqc-footer">
+          <div class="rqc-badges">
+            <span class="rqc-badge purple">&#9729;&#65039; Cloud Intern</span>
+            <span class="rqc-badge cyan">&#127891; CSE &rsquo;26</span>
+            <span class="rqc-badge green">&#9889; Open to Work</span>
           </div>
-          <p style="font-family:'DM Mono',monospace;font-size:.68rem;color:var(--muted)">&mdash; Pruthvi Raj D S</p>
+          <p class="rqc-sig">&mdash; Pruthvi Raj D S</p>
         </div>
       </div>
       <button onclick="toggleResume()" id="resumeToggleBtn" class="btn-p" style="background:linear-gradient(135deg,#0891b2,#10b981);margin:0 auto">
@@ -207,19 +170,19 @@
         <span id="resumeBtnText">View Resume</span>
       </button>
     </div>
+
     <div id="resumeContent" style="display:none;margin-top:2rem">
       <div style="display:flex;justify-content:flex-end;margin-bottom:1.25rem;gap:.75rem;flex-wrap:wrap">
         <button onclick="printResume()" class="btn-p" style="background:linear-gradient(135deg,#0891b2,#10b981)">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download as PDF
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download as PDF
         </button>
       </div>
-      <div class="resume-paper">
+      <div class="resume-paper" id="resumePaper">
         <div class="r-header">
           <div class="r-photo-ring"><div class="r-photo-inner"><img src="photo.jpg" alt="Pruthvi Raj D S"/></div></div>
           <div class="r-info">
             <div class="r-name">Pruthvi Raj D S</div>
-            <div class="r-role">Cloud Computing Intern &nbsp;·&nbsp; Full-Stack Developer</div>
+            <div class="r-role">Cloud Computing Intern &nbsp;&middot;&nbsp; Full-Stack Developer</div>
             <div class="r-contacts">
               <div class="r-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>pruthviraj462004@gmail.com</div>
               <div class="r-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>github.com/2004Pruthvi</div>
@@ -287,7 +250,7 @@
                   <div class="tl-r-dot-col"><div class="tl-r-dot" style="background:linear-gradient(135deg,#4f46e5,#0891b2)"></div><div class="tl-r-line"></div></div>
                   <div class="tl-r-body">
                     <div class="tl-r-header"><div class="tl-r-title">Cloud Computing Intern</div><span class="tl-r-date">2026 &mdash; Present</span></div>
-                    <div class="tl-r-org">Rooman Technologies &nbsp;&middot;&nbsp; Bengaluru, Karnataka</div>
+                    <div class="tl-r-org">Rooman Technologies &nbsp;&middot;&nbsp; Bengaluru</div>
                     <div class="tl-r-desc">Worked with AWS EC2, S3, and IAM Policies &mdash; provisioning instances, managing bucket objects, and implementing security best practices. Hosted and deployed projects on EC2 and S3.</div>
                     <div class="tl-r-tags"><span class="r-tag">AWS EC2</span><span class="r-tag">AWS S3</span><span class="r-tag">IAM Policies</span><span class="r-tag">Cloud Hosting</span><span class="r-tag">DevOps</span></div>
                   </div>
@@ -301,36 +264,36 @@
                   <div class="tl-r-dot-col"><div class="tl-r-dot" style="background:#7c3aed"></div><div class="tl-r-line"></div></div>
                   <div class="tl-r-body">
                     <div class="tl-r-header"><div class="tl-r-title">AI Sketch Calc <span style="font-size:.68rem;font-weight:500;color:#6366f1">(Major)</span></div></div>
-                    <div class="tl-r-desc">AI-based calculator accepting canvas drawings for arithmetic operations. Focused on intuitive interaction and simplified UI design.</div>
+                    <div class="tl-r-desc">AI-based calculator accepting canvas drawings for arithmetic operations.</div>
                     <div class="tl-r-tags"><span class="r-tag">Python</span><span class="r-tag">AI/ML</span><span class="r-tag">Canvas</span><span class="r-tag">Computer Vision</span></div>
-                    <a href="https://github.com/2004Pruthvi" target="_blank" class="r-gh-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> View on GitHub</a>
+                    <a href="https://github.com/2004Pruthvi" target="_blank" class="r-gh-link"><svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> View on GitHub</a>
                   </div>
                 </div>
                 <div class="tl-r-item">
                   <div class="tl-r-dot-col"><div class="tl-r-dot" style="background:#0891b2"></div><div class="tl-r-line"></div></div>
                   <div class="tl-r-body">
                     <div class="tl-r-header"><div class="tl-r-title">Smart Parenting Assistance Robot <span style="font-size:.68rem;font-weight:500;color:#6366f1">(Major)</span></div></div>
-                    <div class="tl-r-desc">IoT robotic assistant for child safety monitoring. Integrated Raspberry Pi 3B+, sensors and AI modules for voice response and real-time monitoring.</div>
+                    <div class="tl-r-desc">IoT robotic assistant for child safety monitoring with Raspberry Pi 3B+, sensors and AI voice response.</div>
                     <div class="tl-r-tags"><span class="r-tag">IoT</span><span class="r-tag">Raspberry Pi</span><span class="r-tag">AI</span><span class="r-tag">Voice Recognition</span></div>
-                    <a href="https://github.com/2004Pruthvi" target="_blank" class="r-gh-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> View on GitHub</a>
+                    <a href="https://github.com/2004Pruthvi" target="_blank" class="r-gh-link"><svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> View on GitHub</a>
                   </div>
                 </div>
                 <div class="tl-r-item">
                   <div class="tl-r-dot-col"><div class="tl-r-dot" style="background:#10b981"></div><div class="tl-r-line"></div></div>
                   <div class="tl-r-body">
                     <div class="tl-r-header"><div class="tl-r-title">Speech to Text Transcriber <span style="font-size:.68rem;font-weight:500;color:#64748b">(Mini)</span></div></div>
-                    <div class="tl-r-desc">Voice recognition system converting spoken input into digital text using Python SpeechRecognition and NLP libraries.</div>
+                    <div class="tl-r-desc">Voice recognition system converting spoken input to digital text using Python SpeechRecognition.</div>
                     <div class="tl-r-tags"><span class="r-tag">Python</span><span class="r-tag">NLP</span><span class="r-tag">SpeechRecognition</span></div>
-                    <a href="https://github.com/2004Pruthvi" target="_blank" class="r-gh-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> View on GitHub</a>
+                    <a href="https://github.com/2004Pruthvi" target="_blank" class="r-gh-link"><svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> View on GitHub</a>
                   </div>
                 </div>
                 <div class="tl-r-item">
                   <div class="tl-r-dot-col"><div class="tl-r-dot" style="background:#f59e0b"></div></div>
                   <div class="tl-r-body">
                     <div class="tl-r-header"><div class="tl-r-title">Handwritten to Text Converter <span style="font-size:.68rem;font-weight:500;color:#64748b">(Mini)</span></div></div>
-                    <div class="tl-r-desc">AI system to recognize and convert handwritten text into digital format using Python and OpenCV.</div>
+                    <div class="tl-r-desc">AI system recognizing and converting handwritten text to digital format using Python and OpenCV.</div>
                     <div class="tl-r-tags"><span class="r-tag">Python</span><span class="r-tag">OpenCV</span><span class="r-tag">AI/ML</span></div>
-                    <a href="https://github.com/2004Pruthvi" target="_blank" class="r-gh-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> View on GitHub</a>
+                    <a href="https://github.com/2004Pruthvi" target="_blank" class="r-gh-link"><svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> View on GitHub</a>
                   </div>
                 </div>
               </div>
@@ -361,12 +324,8 @@
     </div>
   </div>
 </section>
-<!-- ═══════════════════════════════════════
-     CONTACT SECTION
-     Left side: contact info and social links.
-     Right side: a form that sends messages to
-     pruthviraj462004@gmail.com via Formspree.
-══════════════════════════════════════════ -->
+
+<!-- CONTACT -->
 <section id="contact">
   <div class="container">
     <div class="reveal"><p class="sec-label">Let's Talk</p><h2 class="sec-title">Get In Touch</h2></div>
@@ -378,14 +337,20 @@
             <div><div class="pc-name">Pruthvi Raj D S</div><div class="pc-role">IoT &middot; Cloud &middot; DevOps &middot; CSE &rsquo;26</div></div>
           </div>
           <h3>Got a project or opportunity?</h3>
-          <p>Whether it's a cloud infra question, IoT deployment, or DevOps challenge &mdash; I'm always open to interesting conversations. Let's build something great together.</p>
+          <p>Whether it's a cloud infra question, IoT deployment, or DevOps challenge &mdash; I'm always open to interesting conversations.</p>
           <div class="contact-links">
             <a href="javascript:void(0)" onclick="window.location=atob('bWFpbHRvOnBydXRodmlyYWo0NjIwMDRAZ21haWwuY29t')" class="c-link">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               pruthviraj462004@gmail.com
             </a>
-            <a href="https://www.linkedin.com/in/pruthvi-raj-d-s-a53172363" target="_blank" class="c-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="#06b6d4"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>linkedin.com/in/pruthvi-raj-d-s</a>
-            <a href="https://github.com/2004Pruthvi" target="_blank" class="c-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="#64748b"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>github.com/2004Pruthvi</a>
+            <a href="https://www.linkedin.com/in/pruthvi-raj-d-s-a53172363" target="_blank" class="c-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#06b6d4"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              linkedin.com/in/pruthvi-raj-d-s
+            </a>
+            <a href="https://github.com/2004Pruthvi" target="_blank" class="c-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#64748b"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              github.com/2004Pruthvi
+            </a>
           </div>
         </div>
       </div>
@@ -394,7 +359,7 @@
           <div id="formWrap">
             <div class="f-group"><label class="f-label">Name</label><input class="f-input" id="fname" type="text" placeholder="Your name" autocomplete="off"/><p class="f-error" id="err-name"></p></div>
             <div class="f-group"><label class="f-label">Email</label><input class="f-input" id="femail" type="email" placeholder="you@example.com" autocomplete="off"/><p class="f-error" id="err-email"></p></div>
-            <div class="f-group"><label class="f-label">Message</label><textarea class="f-input" id="fmsg" rows="5" placeholder="Tell me about your project or opportunity..."></textarea><p class="f-error" id="err-msg"></p></div>
+            <div class="f-group"><label class="f-label">Message</label><textarea class="f-input" id="fmsg" rows="5" placeholder="Tell me about your project..."></textarea><p class="f-error" id="err-msg"></p></div>
             <button class="btn-p" id="sendBtn" style="width:100%;justify-content:center">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
               Send Message
@@ -409,9 +374,7 @@
     </div>
   </div>
 </section>
-<!-- ═══════════════════════════════════════
-     FOOTER — bottom of the page
-══════════════════════════════════════════ -->
+
 <footer>
   <p>
     <span class="hl">Pruthvi Raj D S</span> &nbsp;&middot;&nbsp; B.E. CSE @ PDIT &middot; VTU &nbsp;&middot;&nbsp; Cloud Intern @ Rooman Technologies<br/>
@@ -419,11 +382,6 @@
     <a href="javascript:void(0)" onclick="window.location=atob('bWFpbHRvOnBydXRodmlyYWo0NjIwMDRAZ21haWwuY29t')" style="color:var(--purple)">pruthviraj462004@gmail.com</a>
   </p>
 </footer>
-<!-- ═══════════════════════════════════════
-     JAVASCRIPT FILE
-     Load script.js LAST (after all HTML is built)
-     so the JS can find all the elements on the page.
-══════════════════════════════════════════ -->
 <script src="script.js"></script>
 </body>
 </html>
