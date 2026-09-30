@@ -71,7 +71,7 @@
   </nav>
 
   <!-- MOBILE MENU -->
-  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+  <div class="mob-menu" id="mobMenu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
     <button class="mob-close" id="mobClose" aria-label="Close menu">&times;</button>
     <a href="#about" class="mob-link">About</a>
     <a href="#skills" class="mob-link">Skills</a>
@@ -92,9 +92,11 @@
   <main>
     <!-- HERO SECTION -->
     <section id="about" class="hero-section">
-      <div class="blob b1" aria-hidden="true"></div>
-      <div class="blob b2" aria-hidden="true"></div>
-      <div class="blob b3" aria-hidden="true"></div>
+      <div class="hero-blobs" aria-hidden="true">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+      </div>
 
       <div class="avatar-wrap">
         <div class="avatar-ring" aria-hidden="true"></div>
@@ -237,6 +239,7 @@
     </section>
 
     <!-- TECHNICAL SKILLS SECTION (Strictly aligned to Resume) -->
+    <div class="section-divider" aria-hidden="true"></div>
     <section id="skills">
       <div class="container">
         <div class="reveal">
@@ -345,6 +348,7 @@
     </section>
 
     <!-- COMPACT VISUAL TOOLCHAIN SECTION -->
+    <div class="section-divider" aria-hidden="true"></div>
     <section id="toolchain" class="toolchain-section">
       <div class="container">
         <div class="reveal">
@@ -418,6 +422,7 @@
     </section>
 
     <!-- PROFESSIONAL INTERNSHIP EXPERIENCE -->
+    <div class="section-divider" aria-hidden="true"></div>
     <section id="experience" class="experience-section">
       <div class="container">
         <div class="reveal">
@@ -484,6 +489,7 @@
     </section>
 
     <!-- HOW I BUILD & DEPLOY: DEVOPS LIFECYCLE SECTION -->
+    <div class="section-divider" aria-hidden="true"></div>
     <section id="lifecycle" class="lifecycle-section">
       <div class="container">
         <div class="reveal">
@@ -590,6 +596,7 @@
     </section>
 
     <!-- PRACTICAL CLOUD ARCHITECTURE SECTION -->
+    <div class="section-divider" aria-hidden="true"></div>
     <section id="architecture" class="architecture-section">
       <div class="container">
         <div class="reveal">
@@ -694,6 +701,7 @@
     </section>
 
     <!-- FEATURED PROJECTS SECTION -->
+    <div class="section-divider" aria-hidden="true"></div>
     <section id="projects" class="projects-section">
       <div class="container">
         <div class="reveal">
@@ -860,6 +868,7 @@
     </section>
 
     <!-- GITHUB ACTIVITY SECTION -->
+    <div class="section-divider" aria-hidden="true"></div>
     <section id="github">
       <div class="container">
         <div class="reveal">
@@ -892,6 +901,7 @@
     </section>
 
     <!-- EDUCATION SECTION -->
+    <div class="section-divider" aria-hidden="true"></div>
     <section id="education" class="education-section">
       <div class="container">
         <div class="reveal">
@@ -928,6 +938,7 @@
     </section>
 
     <!-- RESUME / CV SECTION (Viewable & Downloadable) -->
+    <div class="section-divider" aria-hidden="true"></div>
     <section id="resume" class="resume-section">
       <div class="container">
         <div class="reveal text-center">
@@ -1228,6 +1239,7 @@
     </section>
 
     <!-- CONTACT SECTION -->
+    <div class="section-divider" aria-hidden="true"></div>
     <section id="contact" class="contact-section">
       <div class="container">
         <div class="reveal">
