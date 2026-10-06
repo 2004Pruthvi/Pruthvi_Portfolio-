@@ -1,14 +1,14 @@
 # Pruthvi Raj D S — DevOps & Cloud Engineer Portfolio
 
-🚀 Modern, high-performance personal portfolio and interactive resume tailored for **DevOps Engineer**, **Cloud Engineer**, **Platform Engineer**, and **SRE** opportunities.
+Modern, high-performance personal portfolio and interactive resume tailored for **DevOps Engineer**, **Cloud Engineer**, **Platform Engineer**, and **SRE** opportunities.
 
-- **Live Website:** [pruthvi-raj-ds.varese.app](https://pruthvi-raj-ds.varese.app/)
+- **Live Website:** [pruthvi-raj-ds.vercel.app](https://pruthvi-raj-ds.vercel.app/)
 - **GitHub:** [github.com/2004Pruthvi](https://github.com/2004Pruthvi)
 - **LinkedIn:** [linkedin.com/in/pruthvirajds](https://linkedin.com/in/pruthvirajds)
 
 ---
 
-## ⚡ Core Technologies & Competencies
+## Core Technologies & Competencies
 
 - **Cloud Platform:** AWS (EC2, VPC, IAM, RDS, ECR, EKS, S3, ECS, CloudWatch, ELB, AWS CLI)
 - **DevOps & CI/CD:** Jenkins, Docker, Kubernetes, Terraform, Ansible, Git, GitHub, Maven
@@ -17,7 +17,7 @@
 
 ---
 
-## 🛠️ Portfolio Features
+## Portfolio Features
 
 - **DevOps Lifecycle Explorer:** Interactive 10-step visualization of the build, test, scan, containerize, and deploy workflow.
 - **Practical Cloud Architecture:** Visual mapping of production multi-tier web traffic, container routing, and Infrastructure as Code.
@@ -31,7 +31,7 @@
 
 ---
 
-## 💻 Local Development
+## Local Development
 
 Run the portfolio locally with any static web server:
 
